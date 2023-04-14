@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header {
+    height: 75vh;
+    width: 100%;
+    border-radius: 0 0 0 20%;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content-header {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.text-rol {
+    font-weight: 100;
+}
+
+.access-buttons{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: right;
+    padding-right: 3vw;
+    /* position: sticky */
+    top: 0;
+    padding-bottom: 30vh;
+}
+
+.access-buttons p{
+    padding-left: 2vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.about-me {
+    padding-top: 10vh;
+    padding-left: 3vw;
+    display: flex;
+    position: relative;
+}
+
+.abtme-content{
+    position: absolute;
+}
+
+.title{
+    padding-left:  4vw ;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+.content-space {
+    height: 20em;
+    width: 15em;
+    /* background-color: black; */
+    border-radius: 45% 0 45% 0;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    box-sizing: content-box;
+    background-position: center;
+    background-size: cover;
+}
+
+.description {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 22vw;
+    margin-top: 23vh;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.circle-container {
+    width: 3.5em;
+    height: 3.5em;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.circle-container img {
+    margin-left: 30%;
+    margin-top: 20%;
+    width: 40%;
+    justify-content: center;
+    float: none;
+}
+
+
+.experience {
+    padding-top: 20vh;
+}
+
+.titles {
+    padding-left: 7vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+.experience-subtitle {
+    padding-left: 7vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.experience-li {
+    list-style: none;
+    display: inline-block;
+    padding: 2vh;
+}
+
+.experience-list {
+    justify-content: center;
+    align-items: center;
+    margin: 0 10% 0 12%;
+    padding-top: 5vh;
+}
+
+.junior-experience {
+    padding-top: 10vh;
+}
+
+.works {
+    padding-top: 20vh;
+}
+
+.works-space {
+    width: 14em;
+    height: 18em;
+    display: table;
+    transition: transform .3s;
+    position: relative;
+    border-radius: 45% 0 45% 0;
+
+}
+
+.works-space .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: transform .5s;
+}
+
+.works-space .front{
+    position: absolute;
+    transform: perspective(600px) rotateY(0);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 45% 0 45% 0;
+    backface-visibility: hidden;
+    border: solid rgb(48, 48, 48) 1px;
+}
+
+.works-space .back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    color: white;
+    background-color: rgb(48, 48, 48);
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0% 45% 0% 45%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.back h1{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-decoration-line:solid white 1px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.back h2{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+.back a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #4fc105ff;
+    margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+#portfolio-front{
+    background-image: url(../static/media/thispage.PNG);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.works-li {
+    list-style: none;
+    display: inline-block;
+    padding: 2vh;
+    padding-left: 3vw;
+    box-sizing: border-box;
+}
+
+.works-li:hover .front{
+    transform: rotateY(180deg);
+}
+
+.works-li:hover .back{
+    transform: rotateX(360deg) scale(1.2);
+}
+
+
+.works-text{
+    width: 14em;
+    height: 18em;
+    display: table;
+}
+
+.works-subtitle{
+    padding-left: 6vw;
+}
+
+.works-space p{
+    display: table;
+    margin: auto;
+    opacity: 00%;
+    display: none;
+}
+
+.sub-li{
+    width: 12em;
+}
+
+.contact{
+    padding-top: 40vh;
+    padding-bottom: 20vh;
+    padding-left: 3vh;
+
+}
+
+.social-ul{
+    position: relative;
+    margin-left: 6.8vw;
+}
+
+.social-li{
+    width: 3em;
+    height: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.social-container{
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    border-radius: 30% 0 0 0;
+}
+
+/* --------------------------------- */
+
+.access-buttons a{
+    text-decoration: none;
+}
+
+.Button {
+    transition: transform .2s;
+    color: black;
+}
+
+.Button:hover {
+    color: #4fc105ff;
+    transform:scale(1.25);
+}
+
+.Button-div {
+    transition: background-color .5s;
+    transition: transform .5s;
+}
+
+.Button-div:hover {
+    background-color: #4fc105ff;
+    transform:scale(1.10);
+    cursor: pointer;
+}
+
+/* ----------------------------*/
+
+.experience-container {
+    border-radius: 100%;
+    background-color: black;
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-container img{
+    width: auto;
+    height: 50%;
+}
+
+/* ------------------------------- */
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+}
+
+.abtme-link{
+    width: 15vw;
+    left: 6vw;
+    top: 3vh;
+    position: relative;
+}
+
+.cv-card{
+    position: relative;
+    width: 15vw;
+    height: 20vw;
+    background-image: url("media/DemianFaulhaber.jpg");
+    background-position: center;
+    background-color: white;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 5% ;
+    border: solid black 1px;
+    transition: transform .2s;
+    z-index: 500;
+    box-shadow: black;
+}
+
+.cv-card:hover {
+    transform: scale(1.2);
+    border: groove #4fc105ff 1px;
+}
+
+.abtme-link:hover ~ .abtme-download{
+    transform: scale(1.2) translate(1.2vw, 1.2vw);
+}
+
+.abtme-download{
+    width: 3.5vw;
+    left: 19vw;
+    position: relative;
+    z-index: 550;
+    transition: transform .2s;
+}
+
+.aboutme-circle{
+    display: flex;
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.aboutme-circle img{
+    width: 1vw;
+    height: 1.5vw;
+}
+
+#HLC-front{
+    background-image: url("../static/media/portada-HLC.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.go-up{
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    left: 95vw;
+    bottom: 1vw;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+}
