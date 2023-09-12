@@ -10,11 +10,15 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #f0f0f0;
+}
+
 .header {
     height: 75vh;
     width: 100%;
     border-radius: 0 0 0 20%;
-    background-color: black;
+    background-color: #1e1e1e;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -88,7 +92,7 @@ html{
 .circle-container {
     width: 3.5em;
     height: 3.5em;
-    background-color: black;
+    background-color: #2e2e2e;
     border-radius: 100%;
 }
 
@@ -110,6 +114,7 @@ html{
     padding-left: 7vw;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
+    color: #2e2e2e;
 }
 
 .experience-subtitle {
@@ -204,10 +209,22 @@ html{
 .back a{
     font-size: 30px;
     text-decoration: none;
-    color: #4fc105ff;
-    margin-top: 100px;
+    color: #f7f7f7;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    left: 85px;
+    top: 37px;
+    position: relative;
+    transition: font-size .2s, color .5s;
+}
+
+.back a:hover{
+    font-size: 35px;
+    color: #4fc105ff;
+}
+
+.second-work{
+    top: 65px!important;
 }
 
 #portfolio-front{
@@ -292,7 +309,7 @@ html{
 .footer{
     width: 100%;
     height: 30vh;
-    background-color: black;
+    background-color: #2e2e2e;
     border-radius: 30% 0 0 0;
 }
 
@@ -304,7 +321,7 @@ html{
 
 .Button {
     transition: transform .2s;
-    color: black;
+    color: #2e2e2e;
 }
 
 .Button:hover {
@@ -327,7 +344,7 @@ html{
 
 .experience-container {
     border-radius: 100%;
-    background-color: black;
+    background-color: #2e2e2e;
     width: 8em;
     height: 8em;
     overflow: hidden;
@@ -339,6 +356,7 @@ html{
 .experience-container img{
     width: auto;
     height: 50%;
+    mix-blend-mode: lighten;
 }
 
 /* ------------------------------- */
@@ -392,7 +410,7 @@ html{
     display: flex;
     width: 3.5vw;
     height: 3.5vw;
-    background-color: black;
+    background-color: #2e2e2e;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
