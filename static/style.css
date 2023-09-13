@@ -434,14 +434,21 @@ body{
     height: 1.5em;
     position: sticky;
     display: flex;
+    opacity: 0;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #2e2e2e;
     color: white;
     font-size: 2em;
     left: 95vw;
     bottom: 1vw;
+    transition: opacity .5s;
 }
+
+.show{
+    opacity:1;
+}
+
 
 .footer{
     display: flex;
